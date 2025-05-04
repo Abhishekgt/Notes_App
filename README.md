@@ -1,12 +1,70 @@
-# React + Vite
+# Mini Notes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive note-taking app built with React (Vite), Chakra UI, and Firebase Realtime Database.
 
-Currently, two official plugins are available:
+![Mini Notes App Screenshot](./public/vite.svg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- Create, view, and delete notes in real-time
+- Beautiful, responsive UI with Chakra UI
+- Light and dark mode with custom gradients
+- Theme toggle button
+- Robust error handling for all network/database operations
+- Clean, centered layout for optimal usability
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
+- **Frontend:** React (Vite), Chakra UI
+- **Backend:** Firebase Realtime Database
+- **Other:** Context API, React Router
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📝 Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/Abhishekgt/Notes_App.git
+cd Notes_App
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+Create a `.env` file in the root directory:
+```
+VITE_FIREBASE_DB_URL=https://your-firebase-db-url
+```
+Replace with your actual Firebase Realtime Database URL.
+
+### 4. Start the development server
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser to use the app.
+
+## 🔒 Firebase Security Rules (for testing)
+```
+{
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+```
+
+## 🌑 Dark Mode Example
+Easily toggle between light and dark themes for a great user experience day or night.
+
+## 📦 Deployment
+You can deploy this app for free using [Vercel](https://vercel.com/), [Netlify](https://netlify.com/), or [Firebase Hosting](https://firebase.google.com/docs/hosting).
+
+## 🙏 Credits
+- [Chakra UI](https://chakra-ui.com/)
+- [Firebase](https://firebase.google.com/)
+- [Vite](https://vitejs.dev/)
+
+---
+
+> Made with ❤️ by [Abhishekgt](https://github.com/Abhishekgt)
